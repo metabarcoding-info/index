@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="scripts.js" deter></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="pics/logo.png">
+	<title>Metabarcoding - Main</title>
+</head>
+
+
+<header>
+	<?php echo file_get_contents("header.php"); ?>
+</header>
+
+<body>
+	<ul class="menu">
+		<li><a href="#"><img id="home-pic" src="pics/home.png" alt=""></a></li>
+		<li id="menu-text"><a>Direct links:</a></li>
+		<li>
+			<a href="" class="dropdown">Raw Data &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="rawdata.php">More Info</a></li>
+				<li><a href="https://submissions.gfbio.org" target="_blank">GFBio Submission Service</a></li>
+				<li><a href="https://www.ebi.ac.uk/ena/browser/submit" target="_blank">ENA Submission</a></li>
+				<li><a href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html" target="_blank">ENA Official Guide</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">ASV Generation &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="asvgeneration.php">More Info</a></li>
+				<li><a href="https://clowm.bi.denbi.de" target="_blank">Apscale on CloWM</a></li>
+				<li><a href="https://github.com/DominikBuchner/apscale" target="_blank">Apscale on GitHub</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">Taxonomy Assignment &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="taxonomy.php">More Info</a></li>
+				<li><a href="https://asv.bolgermany.de/dashboard/overview" target="_blank">ASV Registry</a></li>
+				<li><a href="https://id.boldsystems.org" target="_blank">BOLD</a></li>
+				<li><a href="https://data.bolgermany.de/gbol1/identifications" target="_blank">GBOL</a></li>
+				<li><a href="https://github.com/cschomb/Primer-specific-Reference-Databases-for-Metabarcoding" target="_blank">Custom References</a></li>
+				<li><a href="https://github.com/cschomb/Metabarcoding-Analysis-with-a-Custom-Reference" target="_blank">MEAN-CURE analysis script</a></li>				
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">Publish &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="publish.php">More Info</a></li>
+				<li><a href="https://asv.bolgermany.de/dashboard/overview" target="_blank">ASV Registry</a></li>
+			</ul>
+		</li>
+	</ul>
+
+
+	<div class="content">
+
+		<div class="welcome-text">
+			<h1>Welcome</h1>
+			<p>This page aims to help with the different steps of the Metabarcoding workflow. From storage of raw data, the generation of ASV files, taxonomic assignment to publishing the data.</p>
+		</div>	
+
+		<div class="flex-box">
+			<div class="flex-item">
+				<details class="item">
+					<summary>Raw Data</summary>
+					<div class="item-content">
+						
+						<p class="flex-text">The first step in the workflow is to make the raw data available for long-term storage and accessability on one of the INDSC platforms. This means that after upload your data can be found and accessed from these nucleotide archives in a standardised format and thus can be reused and is interoperable.</p>
+						
+						<ul>
+							<li>Submit files via the GFBio Submission &nbsp;  <a target="_blank" href="https://submissions.gfbio.org"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Submit files directly to ENA.&nbsp;  <a target="_blank" href="https://www.ebi.ac.uk/ena/browser/submit"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Read the official ENA submission guide.&nbsp;  <a target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+						</ul>
+
+						<a  href="rawdata.php"><button class="int-link">More info &nbsp; <i class="arrow-right"></i></button></a>
+					</div>				
+				</details>
+			</div>
+			<div class="flex-item">
+				<details class="item">
+					<summary>ASV Generation</summary>
+					<div class="item-content">
+						<p class="flex-text">The next step in the Metabarcoding worflow is to generate Amplicon Sequence Variants (ASVs). To that end we provide the possibility to let Apscale run on the Cloud-based Workflow Manager platform (CloWM), or you can use the pipline run locally, by following the instructions from the GitHub archive.</p>
+						
+						<ul>
+							<li>Apscale on CloWM for the execution of the pipeline in a cloud computing environment.&nbsp; <a target="_blank" href=""><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Apscale on GitHub for the execution of the pipeline on a local machine.&nbsp; <a target="_blank" href=""><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+						</ul>
+
+						<a  href="asvgeneration.php"><button class="int-link">More info &nbsp; <i class="arrow-right"></i></button></a>
+					</div>	
+				</details>
+			</div>
+			<div class="flex-item">
+				<details class="item">
+					<summary>Taxonomy Assignment</summary>
+					<div class="item-content">
+						<p class="flex-text">After the generation of ASV tables, taxonomic information can be assigned to them. Depending on the taxonomic coverage of the project (sampling method, primers used for amplification, etc.) there is a multitude of ways to achieve this.</p>
+						
+						<ul>
+							<li>Submit your ASV table to the ASV Registry and BLAST your sequences against the available reference databases.&nbsp; <a target="_blank" href="https://asv.bolgermany.de//dashboard/overview"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>ID your barcode sequences with the Barcode of life data systems (BOLD).&nbsp; <a target="_blank" href="https://id.boldsystems.org"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>ID your barcode sequences through the German Barcode of Life (GBOL).&nbsp; <a target="_blank" href="https://data.bolgermany.de/gbol1/identifications"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Create your own reference database, or choose from the provided list (The guidelines and scripts outline the generation of reference databases from INSDC sequences and results in primer-specific databases with quality information of the contained sequences. The provided databases are regularly updated and new ones will be added.) &nbsp; <a target="_blank" href="https://github.com/cschomb/Primer-specific-Reference-Databases-for-Metabarcoding"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>When using one of the custom databases, the assigned taxonomies can be analysed with the MEAN-CURE script, which takes the quality information of the sequences in the reference database into account, and which can be modified to include the local occurrence of taxa.&nbsp; <a target="_blank" href="https://github.com/cschomb/Metabarcoding-Analysis-with-a-Custom-Reference"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+						</ul>
+
+						<a  href="taxonomy.php"><button class="int-link">More info &nbsp; <i class="arrow-right"></i></button></a>
+					</div>	
+				</details>
+			</div>
+			<div class="flex-item">
+				<details class="item">
+					<summary>Publish</summary>
+					<div class="item-content">
+						<i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam, consequuntur ratione laudantium numquam hic laboriosam velit distinctio aut voluptatum placeat nulla in voluptatem soluta, commodi, ex itaque possimus iure.</i>
+					</div>	
+				</details>
+			</div>
+		</div>
+
+	</div>
+
+
+	
+</body>
+
+<footer>
+	<?php echo file_get_contents("footer.php"); ?>
+</footer>
+
+</html>
