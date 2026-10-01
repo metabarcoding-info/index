@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="scripts.js" deter></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="pics/logo.png">
+	<title>Metabarcoding - Publish</title>
+</head>
+
+
+<header>
+	<div class="header-image">
+		<img style="width: 100%; padding:1rem 0rem 0rem 0rem; background-color: var(--8);" src="pics/header_graphic_4.png" alt="">
+	</div>
+</header>
+
+<body>
+	<ul class="menu">
+		<li><a href="index.html"><img id="home-pic" src="pics/home.png" alt=""></a></li>
+		<li id="menu-text"><a>Direct links:</a></li>
+		<li>
+			<a href="" class="dropdown">Raw Data &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="rawdata.html">More Info</a></li>
+				<li><a href="https://submissions.gfbio.org" target="_blank">GFBio Submission Service</a></li>
+				<li><a href="https://www.ebi.ac.uk/ena/browser/submit" target="_blank">ENA Submission</a></li>
+				<li><a href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html" target="_blank">ENA Official Guide</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">ASV Generation &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="asvgeneration.html">More Info</a></li>
+				<li><a href="https://clowm.bi.denbi.de" target="_blank">Apscale on CloWM</a></li>
+				<li><a href="https://github.com/DominikBuchner/apscale" target="_blank">Apscale on GitHub</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">Taxonomy Assignment &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="taxonomy.html">More Info</a></li>
+				<li><a href="https://asv.bolgermany.de/dashboard/overview" target="_blank">ASV Registry</a></li>
+				<li><a href="https://id.boldsystems.org" target="_blank">BOLD</a></li>
+				<li><a href="https://data.bolgermany.de/gbol1/identifications" target="_blank">GBOL</a></li>
+				<li><a href="https://github.com/cschomb/Primer-specific-Reference-Databases-for-Metabarcoding" target="_blank">Custom References</a></li>
+				<li><a href="https://github.com/cschomb/Metabarcoding-Analysis-with-a-Custom-Reference" target="_blank">MEAN-CURE analysis script</a></li>				
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">Publish &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="publish.html">More Info</a></li>
+				<li><a href="https://asv.bolgermany.de/dashboard/overview" target="_blank">ASV Registry</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<h1 style="margin: 1rem;">Publish your data</h1>
+
+		<div class="subpage-header">
+
+			<p>The last step in working with you Metabarcoding data (apart from analysing your dataset and draw biologigal meaning from it) is the publication of the data. Raw reads and ASV tables published under FAIR principles.</p>
+
+			<p>As mentioned before we advise to publish raw reads and ASV tables simultaneously via the <a target="_blank" class="text-link-header" href="https://submissions.gfbio.org">GFBio Submission Service</a>.</p>
+
+
+			
+
+					
+		</div>
+
+
+	<div class="content-subpage">
+		<div class="sub-division">
+			<p>
+				<h3>Raw reads</h3>
+				<p>For the submission of raw read see the information <a class="text-link" href="rawdata.html">here</a></p>
+			</p>
+		</div>
+		
+		<div class="sub-division">
+			<p>
+				<h3>ASV tables</h3>
+				<p>For the publication of ASV tables to the ASV Registry and further on to GBIF use the <a target="_blank" class="text-link" href="https://submissions.gfbio.org">GFBio Submission Service</a>. Here, choose the template for Metabarcoding data (under Other templates), or download it  <a class="text-link" href="#dlbtn">below</a></p>
+			</p>
+
+			<p>
+				<h3>The template</h3>
+				<p>The Metabarcoding submission template has four sheets: read_me, dataset_info, collection_sites, asv_sequence_data, example_asv_data, description</p>
+				<p>Please refer to the read_me and description sheets for information on how to fill out the template and the example_asv_data for an example of how to fill out the asv_sequence_data sheet.</p>
+				<p>Below you will find the explanation sof the three sheets (<a class="text-link" href="#dsinfo">dataset_info</a>, <a class="text-link" href="#colsites">collection_sites</a> and <a class="text-link" href="#asvseq">asv_sequence_data</a>), that have to be filled out for every submission:</p>
+
+			</p>
+
+			<p>
+				<h3 id="dsinfo">dataset_info</h3>
+				<table class="table-overview">
+					<tr>
+							<th>Dataset Title</th>
+							<td>A short, concise title</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Dataset Details</th>
+							<td>Free-form text containing a longer description of the project</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Dataset URL</th>
+							<td>URL pointing to an online source related to the current project, which may or may not serve an updated version of the description data</td>
+							<td><i>if available</i></td>
+					</tr>
+					<tr>
+							<th>Contact Person Name</th>
+							<td>Name of the content/administrative contact person - Questions and feedback about data, or restrictions on use of the data should be directed to the adminstrative contact. This contact normally represents the agent acting as the original supplier or custodian of the dataset.</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Contact Person Email</th>
+							<td>Email of contact person</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Owner Organisation</th>
+							<td>Full organization or corporate name in multiple languages (en: 'Botanical Garden of ...', de: 'Botanischer Garten von ...'). The Label mechanism also supports acronyms / abbreviations. - Entity having legal possession of the data collection content. Here defined for the entire data collection, not for individual units (an owner statement on the unit-level would override this dataset-level statement)</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Owner Person/Full Name</th>
+							<td>Name of an individual person</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Owner Role</th>
+							<td>Functional contact name, e.g. "Database administrator", "The Director", etc.</td>
+							<td><i>optional</i></td>
+					</tr>
+					<tr>
+							<th>License</th>
+							<td>To be used if data are placed under a public license (GPL, GFDL, OpenDocument). Placing data under a public license while maintaining copyright is recommended! </td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Terms Of Use</th>
+							<td>Defines conditions under which the data may be analised, distributed or changed. "Terms of use" includes concepts like "Usage conditions" and "Specific Restrictions".</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Additional Author 1..n Name</th>
+							<td>Name of author</td>
+							<td><i>if available</i></td>
+					</tr>
+					<tr>
+							<th>Additional Author 1..n Email</th>
+							<td>Email of author</td>
+							<td><i>if available</i></td>
+					</tr>
+					<tr>
+							<th>Reference Literature Title</th>
+							<td>Title of the referenced literature</td>
+							<td><i>if available</i></td>
+					</tr>
+					<tr>
+							<th>Reference Literature Details</th>
+							<td>Details on the referenced literature</td>
+							<td><i>if available</i></td>
+					</tr>
+					<tr>
+							<th>Reference Literature DOI</th>
+							<td>DOI of the referenced literature</td>
+							<td><i>mandatory, if literature is given</i></td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<h3 id="colsites">collection_sites</h3>
+				<table class="table-overview">
+					<tr>
+							<th>Source institution</th>
+							<td>Unique identifier (code or name) of the institution holding the original data source (first part of record identifier). In specimen collections, this is normally the institution or private holder of the collection itself. For herbaria and botanical gardens, the standard abbreviations should be used.</td>
+							<td><i>mandatory (in doubt = owner organisation)</i></td>
+					</tr>
+					<tr>
+							<th>Source of record</th>
+							<td>Name or code of the data source (unique within the institution, second part of the record identifier)</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>DateLastEdited</th>
+							<td>Date of last change (or creation for first version) of this unit record.</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>Recordbasis</th>
+							<td>An indication of what the unit record describes, using controlled vocabulary (see description sheet for details)</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Sample-ID</th>
+							<td>short name or identifier of the sampling site (e.g. identifier of Malaise-Bottle, collecting site) unique within source, used in table asv-sequence_data to connect data</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Date and time (ISO)</th>
+							<td>Date (and time) of the collecting or observation event, expressed in a date type (convertible to an ISO 8601 standard structured format). If you want to state a period, use this field for its beginning and an additional one for its end. If it is impossible to use a date format, use a DateText field instead.</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Gathering agent</th>
+							<td>The person, or one of the persons or team(s) or organization(s) responsible for collecting or recording.</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>LocalityText</th>
+							<td>Original locality data as appearing on a label or in an original entry.</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>Country</th>
+							<td>Name of country or major region for specimen or observation (for marine areas see element "Named area")</td>
+							<td><i>if continental locality</i></td>
+					</tr>
+					<tr>
+							<th>Named area</th>
+							<td>Name of a geographic, geomorphological, geoecological, or administrative area (used alternatively to country; applicable in marine areas)</td>
+							<td><i>if marine locality</i></td>
+					</tr>
+					<tr>
+							<th>Site longitude (decimal)</th>
+							<td>Longitude expressed in decimal degrees</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Site latitude (decimal)</th>
+							<td>Latitude expressed in decimal degrees</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>Site coordinate type (spatial datum)</th>
+							<td>Mathematical surface on which the mapping and coordinate system used for the geocodes of the record are based (for GPS "WGS84" in general)</td>
+							<td><i>only applicable if coordinates are present, then mandatory</i></td>
+					</tr>
+					<tr>
+							<th>collecting method</th>
+							<td>method used for collecting specimens (e.g Malaise-trap, hand fang)</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>File URL/URI</th>
+							<td>Universal Resource Identifier (URI) of the underlying multimedia file, i.e. "naked" path to electronic source of multimedia object (e.g. web address). If your material is sent to and published by GFBio, the URI will be set.</td>
+							<td><i>for each multimedia object</i></td>
+					</tr>
+					<tr>
+							<th>Creator</th>
+							<td>Identifier, e.g. name or other id, of (technical) personnel who has taken the image. Does not imply copyrights or other rights.</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>License</th>
+							<td>To be used if data are placed under a public license (GPL, GFDL, OpenDocument). Placing data under a public license while maintaining copyright is recommended.</td>
+							<td><i>highly recommended</i></td>
+					</tr>
+					<tr>
+							<th>MeasurerandFact1</th>
+							<td>A container for quantitative and categorical measurements (including observations) refering to the unit, e.g. counts, size measurements, colours, etc.</td>
+							<td><i>optional</i></td>
+					</tr>
+					<tr>
+							<th>MeasuredValue1</th>
+							<td>Value for measured fact</td>
+							<td><i>optional</i></td>
+					</tr>
+					<tr>
+							<th>MeasurementUnit1</th>
+							<td>Unit of measured fact</td>
+							<td><i>optional</i></td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<h3 id="asvseq">asv_sequence_data</h3>
+				<table class="table-overview">
+					<tr>
+							<th>pcr-primer_fwd</th>
+							<td>Used forward primer for pcr</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>pcr-primer_rev</th>
+							<td>Used reverse primer for pcr</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>primer target</th>
+							<td>Target of the used primer</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>seq-primer</th>
+							<td>Used primer for sequencing</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>sequence</th>
+							<td>Sequence of operational taxonomic unit (OTU) or amplicon sequence variant (ASV) found in the sample</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>record identifier</th>
+							<td>Unique identifier within this source</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Reference database 1</th>
+							<td>Name of reference database (e.g. BOLD, NCBI)</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>URL_database 1</th>
+							<td>URL to reference database (e.g. https://boldsystems.org)</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>result 1</th>
+							<td>Result of blast 1 (taxonnames ordered by ranks, see example column H-M in the template), add as many columns as needed</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Taxon reference in database 1</th>
+							<td>URI to taxon in reference database (see example column N in the template)</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>%-identity 1</th>
+							<td>Grade of identity of sequence with reference database in % (see example column O or AR in the template)</td>
+							<td><i>recommended</i></td>
+					</tr>
+					<tr>
+							<th>Reference 2</th>
+							<td>Possibility for another results block from a different reference, divided as above</td>
+							<td><i>optional</i></td>
+					</tr>
+					<tr>
+							<th>Sample-ID 1</th>
+							<td>name of the first collection site (as referenced in sheet collection_sites J4) in column header and all reads per ASV/OTU for the taxa and sampling site in cells below (see example column Z in the template)</td>
+							<td><i>mandatory</i></td>
+					</tr>
+					<tr>
+							<th>Sample-ID [..]</th>
+							<td>name of the x. collection site (as referenced in sheet collection_sites Jx) in column header and all reads per ASV/OTU for the taxa and sampling site in cells below. As many as you have samples.</td>
+							<td><i></i></td>
+					</tr>
+				</table>
+			</p>
+
+			<a id="dlbtn" href="files/Metabarcoding_data_template.xlsx"><button class="int-link">Download Metabarcoding submission template &nbsp; <i class="arrow-right"></i></button></a>
+
+
+		</div>
+		
+		
+
+	</div>
+
+
+</body>
+
+<footer>
+	<div class="footer">
+		<div class="footer-links">
+			<a href="https://www.nfdi4biodiversity.org/en/" target="_blank"><button class="footer-link ">NFDI4Biodiversity Website &nbsp; <i class="arrow-right"></i></button></a>
+
+			<a href="https://www.nfdi4biodiversity.org/en/contact/" target="_blank"><button class="footer-link ">NFDI4Biodiversity Helpdesk &nbsp; <i class="arrow-right"></i></button></a>
+
+			<div class="footer-hover-wrapper">
+				<span class="footer-link">
+				Contact &nbsp; <i class="arrow-right"></i>
+				</span>
+				<div class="footer-hover-text">
+				In case you have questions about this site, its contents, or want to make recommendations for the improvement of this site please contact c.schomburg[at]uni-kassel.de directly. <br> (c) 2026, C.Schomburg
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-pics">
+			<img id="nfdi-slogan" src="pics/Slogan_Biodiversity_rgb.png" alt="">
+			<img id="nfdi-logo" src="pics/NFDI_4_Biodiversity___Logo_Negativ.png" alt="">
+			<img id="uniks-logo" src="pics/Logo_Uni-Kassel.svg" alt="">			
+		</div>
+		
+		
+	</div>
+</footer>
+
+</html>

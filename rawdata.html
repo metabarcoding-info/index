@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="scripts.js" deter></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="pics/logo.png">
+	<title>Metabarcoding - Raw Data</title>
+</head>
+
+
+<header>
+	<div class="header-image">
+		<img style="width: 100%; padding:1rem 0rem 0rem 0rem; background-color: var(--8);" src="pics/header_graphic_4.png" alt="">
+	</div>
+</header>
+
+<body>
+	<ul class="menu">
+		<li><a href="index.html"><img id="home-pic" src="pics/home.png" alt=""></a></li>
+		<li id="menu-text"><a>Direct links:</a></li>
+		<li>
+			<a href="" class="dropdown">Raw Data &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="rawdata.html">More Info</a></li>
+				<li><a href="https://submissions.gfbio.org" target="_blank">GFBio Submission Service</a></li>
+				<li><a href="https://www.ebi.ac.uk/ena/browser/submit" target="_blank">ENA Submission</a></li>
+				<li><a href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html" target="_blank">ENA Official Guide</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">ASV Generation &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="asvgeneration.html">More Info</a></li>
+				<li><a href="https://clowm.bi.denbi.de" target="_blank">Apscale on CloWM</a></li>
+				<li><a href="https://github.com/DominikBuchner/apscale" target="_blank">Apscale on GitHub</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">Taxonomy Assignment &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="taxonomy.html">More Info</a></li>
+				<li><a href="https://asv.bolgermany.de/dashboard/overview" target="_blank">ASV Registry</a></li>
+				<li><a href="https://id.boldsystems.org" target="_blank">BOLD</a></li>
+				<li><a href="https://data.bolgermany.de/gbol1/identifications" target="_blank">GBOL</a></li>
+				<li><a href="https://github.com/cschomb/Primer-specific-Reference-Databases-for-Metabarcoding" target="_blank">Custom References</a></li>
+				<li><a href="https://github.com/cschomb/Metabarcoding-Analysis-with-a-Custom-Reference" target="_blank">MEAN-CURE analysis script</a></li>				
+			</ul>
+		</li>
+		<li>
+			<a href="" class="dropdown">Publish &nbsp; <i class="arrow"></i></a>
+			<ul class="drop-content">
+				<li><a href="publish.html">More Info</a></li>
+				<li><a href="https://asv.bolgermany.de/dashboard/overview" target="_blank">ASV Registry</a></li>
+			</ul>
+		</li>
+	</ul>
+
+<h1 style="margin: 1rem;">Raw data</h1>
+
+		<div class="subpage-header">
+
+			<p>The easiest way to publish your raw data on one of the INDSC databases (such as the European Nucleotide Archive) is via the <a class="text-link-header" target="_blank" href="https://submissions.gfbio.org">GFBio Submission service</a>. </p>
+
+			<p>There you can sign up for an account and create a new submission. For your raw read files you can choose the molecular data template (either on the page or <a class="text-link-header" href="files/GFBio_submission_molecular_data_template.csv">here</a>), fill it out and upload it alongside your data files. For a description of the metadata fields and their usage, please see the link during the submission or <a class="text-link-header" target="_blank" href="https://gitlab-pe.gwdg.de/gfbio/molecular-submission-templates/-/blob/master/Template-Description.md">here</a></p>
+
+			
+		</div>
+
+
+
+	<div class="content-subpage">
+		
+		
+		<div class="sub-division">
+			<p>In case you want to upload your data to ENA yourself, please check possibilities and make yourself familiar with the official <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html">ENA guide</a>. Afterwards, you can submit your files i.e. through the  <a class="text-link" target="_blank" href="https://www.ebi.ac.uk/ena/browser/submit">ENA Webin Portal</a>, by taking the following steps, after creating an account:</p>
+
+			<ul>
+				<li>Register a study (Where you are asked to set a study name and a release date, as well as provide a descriptive study title and abstract)</li>
+				<li>Register your samples (Where you can choose an appropiate template to download, fill out and upload (see below for exapmle and details)) </li>
+				<li>Upload you sequence files by one of the methods suggested in the official guide (important: upload your sequence files first before registering raw reads!)</li>
+				<li>Register your raw reads (Where you again can choose the appropiate template, fill it out and upload it, thereby binding the study, samples and raw reads together (see below for example and details))</li>
+
+			</ul>
+
+			<p>
+				<h3>Registering samples:</h3>
+				
+				<p>In order to register samples, you can download one of the sample checklists from the ENA Webin portal, depending on your study design and scope. Each table contains mandatory fields, which have to be present, as well as optional fields (chosen from the list when preparing to download). There is also the possibility to add custom fields, to contain information, that is not covered by one of the standard fields from ENA. After successful registration of the samples, it is possible to download the resulting sample accession numbers (needed for the registration of raw reads)</p>
+
+				<p>As a minimal example, a spreadsheet would contain the columns:
+					<table class="table-overview">
+						<tr>
+							<th>tax_id</th>
+							<td>an NCBI taxonomy ID (for Metabarcoding sample, where there will be different species present in the sequences, NCBI Taxonomy provides a list of metagenome identifiers, which an be used here. Refer to <a class="text-link" target="_blank" href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/browser/?taxon=408169">NCBI Taxonomy</a> to find the appropiate ID for your study)</td>
+						</tr>
+						<tr>
+							<th>scientific_name</th>
+							<td>The name associated with the chosen tax_id</td>
+						</tr>
+						<tr>
+							<th>sample_alias</th>
+							<td>A unique identifier for each of the samples.</td>
+						</tr>
+						<tr>
+							<th>sample_title</th>
+							<td>A short title for the samples. (Does not need to be unique. Can be used to group re-runs, triplicates, etc.)</td>
+						</tr>
+						<tr>
+							<th>sample_description</th>
+							<td>A short description of the samples.</td>
+						</tr>
+						<tr>
+							<th>collection date</th>
+							<td>Date of collection (Must be ISO8601 compliant, such as "2026-08-26".)</td>
+						</tr>
+						
+						<tr>
+							<th>geographic location (country and/or sea)</th>
+							<td>One entry from the INSDC list of <a class="text-link" target="_blank" href="https://www.ncbi.nlm.nih.gov/genbank/collab/country/">countries</a>.</td>
+						</tr>
+						<tr>
+							<th>lat_lon</th>
+							<td>Geographical coordinates of the location where the specimen was collected</td>
+						</tr>
+						<tr>
+							<th>geographic location (region and locality)</th>
+							<td>A more precise description of the location. (Such as federal state, province, city, etc.)</td>
+						</tr>
+						<tr>
+							<th>environmental sample</th>
+							<td>Yes/No (to distinguish actual samples from controls)</td>
+						</tr>
+					</table>
+				</p>
+				<p>Example:</p>
+					<table class="table-example">
+						<tr>
+							<th>Checklist</th>
+							<th>ERC000011:1.3</th>
+							<th>ENA default sample checklist</th>
+						</tr>
+						<tr>
+							<th>tax_id</th>
+							<th>scientific_name</th>
+							<th>sample_alias</th>
+							<th>sample_title</th>
+							<th>sample_description</th>
+							<th>collection date</th>
+							<th>geographic location (country and/or sea)</th>
+							<th>lat_lon</th>
+							<th>geographic location (region and locality)</th>
+							<th>environmental_sample</th>
+						</tr>
+						<tr>
+							<th>#units</th>
+						</tr>
+						<tr>
+							<td>1628154</td>
+							<td>pollen metagenome</td>
+							<td>Sample_1.1</td>
+							<td>Sample_1</td>
+							<td>associated plant traces from sweep netting</td>
+							<td>2026-08-26</td>
+							<td>Germany</td>
+							<td>51.411, 9.429</td>
+							<td>Hesse, Kassel</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>1628154</td>
+							<td>pollen metagenome</td>
+							<td>PCR_blank_1</td>
+							<td>PCR_blank</td>
+							<td>PCR blank control</td>
+							<td>missing</td>
+							<td>missing</td>
+							<td></td>
+							<td></td>
+							<td>No</td>
+						</tr>
+					</table>
+
+					<p>The first row contains information about the checklist, that was downloaded, the second row contains the column names for the netadata fields. The third row is only needed for custom fields, where you need to denote the unit in which values in your custom fields are measured.</p>
+
+					<a  href="files/ENA_sample_checklist_template.tsv"><button class="int-link">Download ENA Sample submission template &nbsp; <i class="arrow-right"></i></button></a>
+			</p>
+
+			<p>
+				<h3>Registering Raw Reads:</h3>
+				<p>In order to register your raw reads, the files must first be uploaded to the ENA servers (by one of the methods from the official guidelines). Then, one of the spreadsheets for read submission can be downloaded from the ENA Webin Portal, filled, and uploaded. Equivalent to the sample submission, there are different temlates, depending on your study design (single reads, paired reads, etc.) and data type (Fastq, BAM, etc.)</p>
+			</p>
+			<p>A minimal example for paired reads in fastq files:
+				<table class="table-overview">
+					<tr>
+						<th>sample</th>
+						<td>The identifier of the sample corresponding to the read files in this row (after registering the samples)</td>
+					</tr>
+					<tr>
+						<th>study</th>
+						<td>The identifier for the study, which was registered in the first step</td>
+					</tr>
+					<tr>
+						<th>instrument_model</th>
+						<td>One of the list available models of sequencers (see <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#instrument">permitted values</a> for this field in the ENA documentation)</td>
+					</tr>
+					<tr>
+						<th>library_name</th>
+						<td>A unique name for the library (Can be the same as for the samples, if there is a 1:1 correlation)</td>
+					</tr>
+					<tr>
+						<th>library_source</th>
+						<td>The type of source material that was sequenced (see <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#source">permitted values</a> for this field in the ENA documentation)</td>
+					</tr>
+					<tr>
+						<th>library_selection</th>
+						<td>The method to select, or enrich the material being sequenced. (see <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#selection">permitted values</a> for this field in the ENA documentation)</td>
+					</tr>
+					<tr>
+						<th>library_strategy</th>
+						<td>The sequencing technique intended for this library. (see <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#strategy">permitted values</a> for this field in the ENA documentation)</td>
+					</tr>
+					<tr>
+						<th>library_layout</th>
+						<td>SINGLE/PAIRED, depending on type of sequencing</td>
+					</tr>
+					<tr>
+						<th>forward_file_name</th>
+						<td>Name of the file containing the forward reads, that was uploaded to the ENA server</td>
+					</tr>
+					<tr>
+						<th>forward_file_md5</th>
+						<td>Forward file checksum (usually delivered from the sequencing facility along with the actual read files)</td>
+					</tr>
+					<tr>
+						<th>reverse_file_name</th>
+						<td>Name of the file containing the reverse reads, that was uploaded to the ENA server</td>
+					</tr>
+					<tr>
+						<th>reverse_file_md5</th>
+						<td>Reverse file checksum (usually delivered from the sequencing facility along with the actual read files)</td>
+					</tr>
+					<tr>
+						<th>FWD_NAME1</th>
+						<td>Name of the forward primer used during amplification</td>
+					</tr>
+					<tr>
+						<th>FWD_SEQ1</th>
+						<td>Sequence of forward primer used during amplification</td>
+					</tr>
+					<tr>
+						<th>REV_NAME1</th>
+						<td>Name of the reverse primer used during amplification</td>
+					</tr>
+					<tr>
+						<th>REV_SEQ1</th>
+						<td>Sequence for the reverse primer used during amplification</td>
+					</tr>
+				</table>
+			</p>
+			
+			<p>In this example, the names and sequences of the primers used during amplification of the libraries were added as custom fields, since it is important information for reproducability and reusability to have the primer sequences directly attached to the read files.</p>
+
+			<p>Example:</p>
+
+			<table class="table-example">
+				<tr>
+					<th>sample</th>
+					<th>study</th>
+					<th>instrument_model</th>
+					<th>library_name</th>
+					<th>library_source</th>
+					<th>library_selection</th>
+					<th>library_strategy</th>
+					<th>library_layout</th>
+					<th>forward_file_name</th>
+					<th>forward_file_md5</th>
+					<th>reverse_file_name</th>
+					<th>reverse_file_md5</th>
+				</tr>
+				<tr>
+					<td>ERS********</td>
+					<td>PRJEB******</td>
+					<td>NextSeq 2000</td>
+					<td>library_1</td>
+					<td>METAGENOMIC</td>
+					<td>PCR</td>
+					<td>AMPLICON</td>
+					<td>PAIRED</td>
+					<td>sample_1_R1.fastq.gz</td>
+					<td>169ef37ed580605907c67dd4bbd1bf53</td>
+					<td>sample_1_R2.fastq.gz</td>
+					<td>b9a3ac184ebc173c9c87fba924db249e</td>
+				</tr>
+				<tr>
+					<td>ERS********</td>
+					<td>PRJEB******</td>
+					<td>NextSeq 2000</td>
+					<td>library_2</td>
+					<td>METAGENOMIC</td>
+					<td>PCR</td>
+					<td>AMPLICON</td>
+					<td>PAIRED</td>
+
+				</tr>
+			</table>
+
+			<table class="table-example">
+				<tr>
+					<th>FWD_NAME1</th>
+					<th>FWD_SEQ1</th>
+					<th>REV_NAME1</th>
+					<th>REV_SEQ1</th>
+				</tr>
+				<tr>
+					<td>ITS-3T7p62plr</td>
+					<td>ACBTRGTGTGAATTGCAGRATC</td>
+					<td>ITS-4T5unR1</td>
+					<td>TCCTCCGCTTATTKATATGC</td>
+				</tr>
+				<tr>
+					<td>ITS-3T7p62plr</td>
+					<td>ACBTRGTGTGAATTGCAGRATC</td>
+					<td>ITS-4T5unR1</td>
+					<td>TCCTCCGCTTATTKATATGC</td>
+				</tr>
+
+			</table>
+
+			<a  href="files/ENA_raw_read_submission_template.tsv"><button class="int-link">Download ENA raw read submission template &nbsp; <i class="arrow-right"></i></button></a>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+<footer>
+	<div class="footer">
+		<div class="footer-links">
+			<a href="https://www.nfdi4biodiversity.org/en/" target="_blank"><button class="footer-link ">NFDI4Biodiversity Website &nbsp; <i class="arrow-right"></i></button></a>
+
+			<a href="https://www.nfdi4biodiversity.org/en/contact/" target="_blank"><button class="footer-link ">NFDI4Biodiversity Helpdesk &nbsp; <i class="arrow-right"></i></button></a>
+
+			<div class="footer-hover-wrapper">
+				<span class="footer-link">
+				Contact &nbsp; <i class="arrow-right"></i>
+				</span>
+				<div class="footer-hover-text">
+				In case you have questions about this site, its contents, or want to make recommendations for the improvement of this site please contact c.schomburg[at]uni-kassel.de directly. <br> (c) 2026, C.Schomburg
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-pics">
+			<img id="nfdi-slogan" src="pics/Slogan_Biodiversity_rgb.png" alt="">
+			<img id="nfdi-logo" src="pics/NFDI_4_Biodiversity___Logo_Negativ.png" alt="">
+			<img id="uniks-logo" src="pics/Logo_Uni-Kassel.svg" alt="">			
+		</div>
+		
+		
+	</div>
+</footer>
+
+</html>
