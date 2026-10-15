@@ -337,6 +337,7 @@
 .item-content {
   flex: 1; /* fills remaining space when open */
   overflow-y: visible;
+  margin-top: 2rem;
 }
 
 .item-content ul li {

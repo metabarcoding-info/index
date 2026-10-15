@@ -62,10 +62,18 @@
 
 		<div class="welcome-text">
 			<h1>Welcome</h1>
-			<p style="font-size: larger; margin: 0 10rem 0 10rem;">This page aims to help with the different steps of the Metabarcoding workflow. From long-term storage and publication of raw data, the tools to generate ASV tables and assign taxonomic information to them, to the publication of your analysed data.</p>
+			<p style="font-size: larger; margin: 0 10rem 0 10rem;">This page supports metabarcoding data analysis and submission under FAIR conditions. The workflow provided here supports:</p>
+			<p><ul style="font-size: larger; margin: 3rem 10rem 3rem 10rem; list-style-position: inside;">
+				<li>standardised documentation during the sampling and analysis process</li>
+				<li>publication of raw sequence data and associated metadata to ENA (European Nucleotide Archive)</li>
+				<li>tools to analyse raw sequence data and generate ASV tables</li>
+				<li>analysis pipelines to generate custom reference libraries and assign taxonomic information</li>
+				<li>publication of your final dataset with the respective metadata</li>
+			</ul></p>
+			<p style="margin: 5rem 10rem 0 10rem; font-size: larger;" >By clicking on the tiles below you will find direct links and more detailed information about the metabarcoding analysis and submission support. While it is possible to submit raw read files with associated metadata and analysed ASV tables independent of one another, we strongly recommend submitting both at the same time to the GFBio Submission Service. The different steps of the workflow are independent of one another and allow for manual quality checks for each step, before submission of the data and attached metadata to ENA and the ASV-Registry linked to GBIF.</p>
 			
 		</div>
-		
+<!--		
 		<div class="schema-header">
 			<h2>Metabarcoding Workflow</h2>
 		</div>
@@ -92,19 +100,18 @@
 				<figcaption>Analyse and Publish</figcaption>
 			</figure>
 		</div>
-
+-->
 		<div class="welcome-text">
-			<p style="margin: 5rem 10rem 0 10rem; font-size: larger;" >In the tiles below you will find direct links and more detailed information about the publication and long-term storage of your raw data, the generation of Amplicon Sequence Variant tables from you raw data, the assignment of taxonomic information to your sequences and the storage and publication of your results.</p>
-			<p style="margin: 0 10rem 0 10rem; font-size: larger;">While you can submit the raw read files and analysed ASV tables idenpendent of one another, we highly recommend to submit both at the same time to the GFBio Submission Service</p>
+			<p style="margin: 2rem 10rem 0 10rem; font-size: larger;" >In the tiles below you will find direct links and more detailed information about the publication and long-term storage of your raw data, the generation of Amplicon Sequence Variant tables from you raw data, the assignment of taxonomic information to your sequences and the storage and publication of your results.</p>
 		</div>
 
 		<div class="flex-box">
 			<div class="flex-item">
 				<details class="item">
-					<summary>Raw Data</summary>
+					<summary style="display:grid; grid-template-columns: 1;"> <img style="width:10rem; justify-self: center;" src="pics/raw_data_neu.png" alt=""><p style="justify-self: center;">Raw Data</p></summary>
 					<div class="item-content">
 						
-						<p class="flex-text">The first step in the workflow is to make the raw data available for long-term storage and accessability on one of the INDSC platforms. This means that after upload your data can be found and accessed from these nucleotide archives in a standardised format and thus can be reused and is interoperable.</p>
+						<p class="flex-text">The first step in the workflow is to make the raw data available for long-term storage and accessability on one of the INDSC platforms. After upload your data can be found and accessed from these nucleotide archives in a standardised format. Thus, it can be reused and is interoperable.</p>
 						
 						<ul>
 							<li>Submit files via the GFBio Submission &nbsp;  <a target="_blank" href="https://submissions.gfbio.org"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
@@ -118,13 +125,13 @@
 			</div>
 			<div class="flex-item">
 				<details class="item">
-					<summary>ASV Generation</summary>
+					<summary style="display:grid; grid-template-columns: 1;"><img style="width:10rem; justify-self: center;" src="pics/asvs_neu.png" alt=""><p style="justify-self: center;">ASV Generation</p></summary>
 					<div class="item-content">
-						<p class="flex-text">The next step in the Metabarcoding worflow is to generate Amplicon Sequence Variants (ASVs). To that end we provide the possibility to let Apscale run on the Cloud-based Workflow Manager platform (CloWM), or you can use the pipline run locally, by following the instructions from the GitHub archive.</p>
+						<p class="flex-text">The next step in the Metabarcoding worflow is to generate Amplicon Sequence Variants (ASVs). To that end we recommend the use of Apscale on the Cloud-based Workflow Manager platform (CloWM). Alternatively,  you can use the pipline locally, by following the instructions from the GitHub archive.</p>
 						
 						<ul>
-							<li>Apscale on CloWM for the execution of the pipeline in a cloud computing environment.&nbsp; <a target="_blank" href=""><button class="ext-link"><i class="arrow-right"></i></button></a></li>
-							<li>Apscale on GitHub for the execution of the pipeline on a local machine.&nbsp; <a target="_blank" href=""><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Apscale on CloWM for the execution of the analysis pipeline in a cloud computing environment.&nbsp; <a target="_blank" href=""><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Apscale on GitHub for software download and pipeline execution on a local machine.&nbsp; <a target="_blank" href=""><button class="ext-link"><i class="arrow-right"></i></button></a></li>
 						</ul>
 
 						<a  href="asvgeneration.html"><button class="int-link">More info &nbsp; <i class="arrow-right"></i></button></a>
@@ -133,16 +140,16 @@
 			</div>
 			<div class="flex-item">
 				<details class="item">
-					<summary>Taxonomy Assignment</summary>
+					<summary style="display:grid; grid-template-columns: 1;"><img style="width:10rem; justify-self: center;" src="pics/taxonomy_neu.png" alt=""><p style="justify-self: center;">Taxonomic</p><p style="justify-self: center;">Assignment</p></summary>
 					<div class="item-content">
-						<p class="flex-text">After the generation of ASV tables, taxonomic information can be assigned to them. Depending on the taxonomic coverage of the project (sampling method, primers used for amplification, etc.) there is a multitude of ways to achieve this.</p>
+						<p class="flex-text">After the generation of ASV tables, taxonomic information can be assigned to the sequences. Depending on the taxonomic coverage of the project (sampling method, primers used for amplification, etc.) there is a multitude of ways to achieve this.</p>
 						
 						<ul>
 							<li>Submit your ASV table to the ASV Registry and BLAST your sequences against the available reference databases.&nbsp; <a target="_blank" href="https://asv.bolgermany.de//dashboard/overview"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
 							<li>ID your barcode sequences with the Barcode of life data systems (BOLD).&nbsp; <a target="_blank" href="https://id.boldsystems.org"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
 							<li>ID your barcode sequences through the German Barcode of Life (GBOL).&nbsp; <a target="_blank" href="https://data.bolgermany.de/gbol1/identifications"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
-							<li>Create your own reference database, or choose from the provided list (The guidelines and scripts outline the generation of reference databases from INSDC sequences and results in primer-specific databases with quality information of the contained sequences. The provided databases are regularly updated and new ones will be added.) &nbsp; <a target="_blank" href="https://github.com/cschomb/Primer-specific-Reference-Databases-for-Metabarcoding"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
-							<li>When using one of the custom databases, the assigned taxonomies can be analysed with the MEAN-CURE script, which takes the quality information of the sequences in the reference database into account, and which can be modified to include the local occurrence of taxa.&nbsp; <a target="_blank" href="https://github.com/cschomb/Metabarcoding-Analysis-with-a-Custom-Reference"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>Create your own reference database, or choose from the provided list (The guidelines and scripts outline the generation of reference databases from INSDC sequences and results in primer-specific databases with quality information of the contained sequences. The databases provied are updated regularly and new ones will be added.) &nbsp; <a target="_blank" href="https://github.com/cschomb/Primer-specific-Reference-Databases-for-Metabarcoding"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
+							<li>When using one of the custom databases, the assigned taxonomies can be analysed with the MEAN-CURE script, which takes the sequence quality information in the reference database into account, and which can be modified to include the local occurrence of taxa.&nbsp; <a target="_blank" href="https://github.com/cschomb/Metabarcoding-Analysis-with-a-Custom-Reference"><button class="ext-link"><i class="arrow-right"></i></button></a></li>
 						</ul>
 
 						<a  href="taxonomy.html"><button class="int-link">More info &nbsp; <i class="arrow-right"></i></button></a>
@@ -151,10 +158,10 @@
 			</div>
 			<div class="flex-item">
 				<details class="item">
-					<summary>Publish</summary>
+					<summary style="display:grid; grid-template-columns: 1;"><img style="width:10rem; justify-self: center;" src="pics/publish_neu.png" alt=""><p style="justify-self: center;">Analysis and</p> <p style="justify-self: center;">Publication</p></summary>
 					<div class="item-content">
 
-						<p class="flex-text">As the final step you can publish your generated ans annotated ASV tables to the ASV Registry, from where they can be further published to GBIF. As mentinoed above it is advantageous to submit your raw files and ASV tables at the same time to the GFBio Submission Service.</p>
+						<p class="flex-text">As the final step you can publish your generated and annotated ASV tables to the ASV Registry, from where they can be further published to GBIF. As mentioned above it is advantageous to submit your raw files and ASV tables at the same time to the GFBio Submission Service.</p>
 
 						<ul>
 							<li>Submit your ASV tables to the ASV Registry via the GFBio Submission Service &nbsp;  <a target="_blank" href="https://submissions.gfbio.org"><button class="ext-link"><i class="arrow-right"></i></button></a></li>

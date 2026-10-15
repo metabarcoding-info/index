@@ -63,7 +63,7 @@
 
 			<p>The easiest way to publish your raw data on one of the INDSC databases (such as the European Nucleotide Archive) is via the <a class="text-link-header" target="_blank" href="https://submissions.gfbio.org">GFBio Submission service</a>. </p>
 
-			<p>There you can sign up for an account and create a new submission. For your raw read files you can choose the molecular data template (either on the page or <a class="text-link-header" href="files/GFBio_submission_molecular_data_template.csv">here</a>), fill it out and upload it alongside your data files. For a description of the metadata fields and their usage, please see the link during the submission or <a class="text-link-header" target="_blank" href="https://gitlab-pe.gwdg.de/gfbio/molecular-submission-templates/-/blob/master/Template-Description.md">here</a></p>
+			<p>To do so, please sign up for an account there and create a new submission. For raw read files please choose the molecular data template (either on the page or <a class="text-link-header" href="files/GFBio_submission_molecular_data_template.csv">here</a>), download it, add your metadata information and and upload it along with your raw sequece data. For a description of the neccessary metadata see the template description in the GFBio Submission Portal.</p>
 
 			
 		</div>
@@ -74,22 +74,22 @@
 		
 		
 		<div class="sub-division">
-			<p>In case you want to upload your data to ENA yourself, please check possibilities and make yourself familiar with the official <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html">ENA guide</a>. Afterwards, you can submit your files i.e. through the  <a class="text-link" target="_blank" href="https://www.ebi.ac.uk/ena/browser/submit">ENA Webin Portal</a>, by taking the following steps, after creating an account:</p>
+			<p>In case you want to upload your data to ENA directly, please familiarise yourself with the official <a class="text-link" target="_blank" href="https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html">ENA guide</a> and submit your files i.e. through the  <a class="text-link" target="_blank" href="https://www.ebi.ac.uk/ena/browser/submit">ENA Webin Portal</a>, please creata an account and consider the following steps:</p>
 
 			<ul>
-				<li>Register a study (Where you are asked to set a study name and a release date, as well as provide a descriptive study title and abstract)</li>
-				<li>Register your samples (Where you can choose an appropiate template to download, fill out and upload (see below for exapmle and details)) </li>
+				<li>Register a study (demanded are a study name and a release date, as well as a descriptive study title and abstract)</li>
+				<li>Register your samples (choose an appropriate template to download, fill out and upload (see below for examples and details)) </li>
 				<li>Upload you sequence files by one of the methods suggested in the official guide (important: upload your sequence files first before registering raw reads!)</li>
-				<li>Register your raw reads (Where you again can choose the appropiate template, fill it out and upload it, thereby binding the study, samples and raw reads together (see below for example and details))</li>
+				<li>Register your raw reads (choose the appropiate template, fill it out and upload it, thereby linking the study, samples and raw reads together (see below for example and details))</li>
 
 			</ul>
 
 			<p>
-				<h3>Registering samples:</h3>
+				<h3>Sample registration:</h3>
 				
-				<p>In order to register samples, you can download one of the sample checklists from the ENA Webin portal, depending on your study design and scope. Each table contains mandatory fields, which have to be present, as well as optional fields (chosen from the list when preparing to download). There is also the possibility to add custom fields, to contain information, that is not covered by one of the standard fields from ENA. After successful registration of the samples, it is possible to download the resulting sample accession numbers (needed for the registration of raw reads)</p>
+				<p>In order to register samples, you can download one of the sample checklists from the ENA Webin portal, dependent on your study design and scope. Each table contains mandatory fields, which have to be filled out, as well as optional fields (chosen from the list when preparing to download). There is also the possibility to add custom fields, to contain information, that is not covered by one of the standard field. After successful registration of the samples, it is possible to download the resulting sample accession numbers (needed for the registration of raw reads)</p>
 
-				<p>As a minimal example, a spreadsheet would contain the columns:
+				<p>As an example with minimal information, a spreadsheet for sample registration would contain the following columns:
 					<table class="table-overview">
 						<tr>
 							<th>tax_id</th>
@@ -260,7 +260,7 @@
 				</table>
 			</p>
 			
-			<p>In this example, the names and sequences of the primers used during amplification of the libraries were added as custom fields, since it is important information for reproducability and reusability to have the primer sequences directly attached to the read files.</p>
+			<p>In this example, the names and primer sequences used during library amplification were added as custom fields, as this information is important for reproducibility and reusability.</p>
 
 			<p>Example:</p>
 
